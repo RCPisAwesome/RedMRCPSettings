@@ -4,11 +4,11 @@ If you're like me and are sick of not being able to use your mouse in a trainer 
 # Screenshots:
 <div class="row" style="display: flex;flex-wrap: wrap;padding: 0 4px;box-sizing: border-box;"> 
   <div class="column" style="flex: 50%;max-width: 50%;padding: 0 4px;box-sizing: border-box;">
-    <img src="https://www.rcpisawesome.co.uk/dev/RedmRCPsettings/1.png" alt="RCP Settings Menu 1" style="width:40%">
+    <img src="https://www.rcpisawesome.co.uk/dev/RedmRCPsettings/1.png" alt="RCP Settings Menu 1" style="width:100%">
   </div>
   <div class="column" style="flex: 50%;max-width: 50%;padding: 0 4px;box-sizing: border-box;">
-    <img src="https://www.rcpisawesome.co.uk/dev/RedmRCPsettings/2.png" alt="RCP Settings Menu 2" style="width:40%">
-    <img src="https://www.rcpisawesome.co.uk/dev/RedmRCPsettings/3.png" alt="RCP Settings Menu 3" style="width:40%">
+    <img src="https://www.rcpisawesome.co.uk/dev/RedmRCPsettings/2.png" alt="RCP Settings Menu 2" style="width:100%">
+    <img src="https://www.rcpisawesome.co.uk/dev/RedmRCPsettings/3.png" alt="RCP Settings Menu 3" style="width:100%">
   </div>  
 </div>
 # Features:
