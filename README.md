@@ -5,8 +5,10 @@ If you're like me and are sick of not being able to use your mouse in a trainer 
 <a href="https://www.rcpisawesome.co.uk/dev/RedmRCPsettings/1.png" target="_blank">**Player**</a>|<a href="https://www.rcpisawesome.co.uk/dev/RedmRCPsettings/2.png" target="_blank">**Entity Before Click**</a>
 :---:|:---:
 [![RCPSettings](https://www.rcpisawesome.co.uk/dev/RedmRCPsettings/1.png)](https://www.rcpisawesome.co.uk/dev/RedmRCPsettings/1.png)|[![RCPSettings](https://www.rcpisawesome.co.uk/dev/RedmRCPsettings/2.png)](https://www.rcpisawesome.co.uk/dev/RedmRCPsettings/2.png)
+
+|<a href="https://www.rcpisawesome.co.uk/dev/RedmRCPsettings/3.png" target="_blank">**Entity After Click**</a>
 :---:|:---:
-dhdhdh|[![RCPSettings](https://www.rcpisawesome.co.uk/dev/RedmRCPsettings/3.png)](https://www.rcpisawesome.co.uk/dev/RedmRCPsettings/3.png)
+|[![RCPSettings](https://www.rcpisawesome.co.uk/dev/RedmRCPsettings/3.png)](https://www.rcpisawesome.co.uk/dev/RedmRCPsettings/3.png)
 # Features:
 Do /rcpsettings in the RedM chat to open the menu
 Click the X or press Escape to close
