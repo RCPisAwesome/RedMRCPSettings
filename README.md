@@ -3,9 +3,9 @@ NUI trainer menu for RedM, the Red Dead Redemption 2 Multiplayer Mod, from the C
 If you're like me and are sick of not being able to use your mouse in a trainer menu look no further.
 # Screenshots:
 <div style="display:inline">
-<img src="https://www.rcpisawesome.co.uk/dev/RedmRCPsettings/1.png" alt="RCP Settings Menu 1" width="50%">
-<img src="https://www.rcpisawesome.co.uk/dev/RedmRCPsettings/2.png" alt="RCP Settings Menu 2" width="50%">
-<img src="https://www.rcpisawesome.co.uk/dev/RedmRCPsettings/3.png" alt="RCP Settings Menu 3" width="50%">
+<img src="https://www.rcpisawesome.co.uk/dev/RedmRCPsettings/1.png" alt="RCP Settings Menu 1" width="40%">
+<img src="https://www.rcpisawesome.co.uk/dev/RedmRCPsettings/2.png" alt="RCP Settings Menu 2" width="40%">
+<img src="https://www.rcpisawesome.co.uk/dev/RedmRCPsettings/3.png" alt="RCP Settings Menu 3" width="40%">
 </div>
 # Features:
 Do /rcpsettings in the RedM chat to open the menu
