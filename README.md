@@ -5,7 +5,6 @@ If you're like me and are sick of not being able to use your mouse in a trainer 
 <img src="https://www.rcpisawesome.co.uk/dev/RedmRCPsettings/1.png" alt="RCP Settings Menu 1">
 <img src="https://www.rcpisawesome.co.uk/dev/RedmRCPsettings/2.png" alt="RCP Settings Menu 2">
 <img src="https://www.rcpisawesome.co.uk/dev/RedmRCPsettings/3.png" alt="RCP Settings Menu 3">
-<img src="https://www.rcpisawesome.co.uk/dev/RedmRCPsettings/4.png" alt="RCP Settings Menu 4">
 
 # Features:
 Do /rcpsettings in the RedM chat to open the menu
