@@ -4,7 +4,10 @@ If you're like me and are sick of not being able to use your mouse in a trainer 
 # Screenshots:
 Player|Entity
 --- | ---
-*Still* | `renders`
+<img src="https://www.rcpisawesome.co.uk/dev/RedmRCPsettings/1.png" alt="RCP Settings Menu 1" style="width:100%">
+| <img src="https://www.rcpisawesome.co.uk/dev/RedmRCPsettings/2.png" alt="RCP Settings Menu 2" style="width:100%">
+d
+| <img src="https://www.rcpisawesome.co.uk/dev/RedmRCPsettings/3.png" alt="RCP Settings Menu 3" style="width:100%">
 # Features:
 Do /rcpsettings in the RedM chat to open the menu
 Click the X or press Escape to close
