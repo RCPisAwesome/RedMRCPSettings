@@ -5,9 +5,9 @@ Coded in LUA, HTML, CSS &amp; JavaScript
 
 If you're like me and you are sick of not being able to use your mouse in a trainer menu then look no further
 # Screenshots:
-<a href="https://www.rcpisawesome.co.uk/dev/RedmRCPsettings/1.png" target="_blank">**Player**</a>|<a href="https://www.rcpisawesome.co.uk/dev/RedmRCPsettings/2.png" target="_blank">**Entity Before Click**</a>|<a href="https://www.rcpisawesome.co.uk/dev/RedmRCPsettings/2.png" target="_blank">**Entity After Click**</a>
-:---:|:---:|:---:
-[![RCPSettings](https://www.rcpisawesome.co.uk/dev/RedmRCPsettings/1.png)](https://www.rcpisawesome.co.uk/dev/RedmRCPsettings/1.png)|[![RCPSettings](https://www.rcpisawesome.co.uk/dev/RedmRCPsettings/2.png)](https://www.rcpisawesome.co.uk/dev/RedmRCPsettings/2.png)|[![RCPSettings](https://www.rcpisawesome.co.uk/dev/RedmRCPsettings/3.png)](https://www.rcpisawesome.co.uk/dev/RedmRCPsettings/3.png)
+<a href="https://www.rcpisawesome.co.uk/dev/RedmRCPsettings/1.png" target="_blank">**Player**</a>|<a href="https://www.rcpisawesome.co.uk/dev/RedmRCPsettings/2.png" target="_blank">**Entity**</a>
+:---:|:---:
+[![RCPSettings](https://www.rcpisawesome.co.uk/dev/RedmRCPsettings/1.png)](https://www.rcpisawesome.co.uk/dev/RedmRCPsettings/1.png)|[![RCPSettings](https://www.rcpisawesome.co.uk/dev/RedmRCPsettings/2.png)](https://www.rcpisawesome.co.uk/dev/RedmRCPsettings/2.png)
 # Features:
 - Do /rcpsettings in the RedM chat to open the menu
 - Click the X or press Escape to close
@@ -18,5 +18,3 @@ If you're like me and you are sick of not being able to use your mouse in a trai
 If you find a bug, issue or error or if you want to request a new feature, [create an issue!](https://github.com/RCPisAwesome/RedmRCPsettings/issues) with as much information as you can provide
 
 If you ever get stuck in the menu from an issue you can do rcpuifix in the F8 console to close it
-
-Current Issue: Kill Entity or Revive Entity don't work sometimes, seems to be a RDR2/RedM issue
