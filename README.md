@@ -15,6 +15,6 @@ If you're like me and you are sick of not being able to use your mouse in a trai
 - Clicking the menu title resets the buttons back to their red colour
 
 # Issues/Bugs &amp; New Features:
-If you find a bug, issue or error or if you want to request a new feature, [create an issue!](https://github.com/RCPisAwesome/RedmRCPsettings/issues) with as much information as you can provide
+If you find a bug, issue or error or if you want to request a new feature, [create an issue](https://github.com/RCPisAwesome/RedmRCPsettings/issues) with as much information as you can provide
 
 If you ever get stuck in the menu from an issue you can do rcpuifix in the F8 console to close it
