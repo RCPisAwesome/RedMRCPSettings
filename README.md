@@ -10,6 +10,7 @@ If you're like me and you are sick of not being able to use your mouse in a trai
 [![RCPSettings](https://www.rcpisawesome.co.uk/dev/RedmRCPsettings/1.png)](https://www.rcpisawesome.co.uk/dev/RedmRCPsettings/1.png)|[![RCPSettings](https://www.rcpisawesome.co.uk/dev/RedmRCPsettings/2.png)](https://www.rcpisawesome.co.uk/dev/RedmRCPsettings/2.png)
 # Features:
 - Do /rcpsettings in the RedM chat to open the menu
+- Do /rcpcrosshair in the RedM chat to toggle the crosshair
 - Click the X or press Escape to close
 - Toggling the Blue Switch in the top right changes whether only 1 button gets highlighted when clicked or any of them
 - Clicking the menu title resets the buttons back to their red colour
