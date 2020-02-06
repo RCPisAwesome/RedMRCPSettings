@@ -1,0 +1,293 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Settings Menu By RCPisAwesome</title>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://www.rcpisawesome.co.uk/dev/RCPMenu.js" type="text/javascript"></script>
+	<link href="https://www.rcpisawesome.co.uk/dev/RCPMenu.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+	<script type="text/javascript">
+		$(function(){
+			$("button").click(function(){
+				if (document.getElementById("switch").checked == true) {
+					colourselectedbutton(this);
+				}else{
+					colouronlyselectedbutton(this);
+				}
+				var location = window.location.href;
+				var directoryPath = location.substring(6, location.lastIndexOf("/")+1);
+				if ((this.id == "scale")||(this.id == "entityscale")){
+					$.post(('http://'+directoryPath+this.id), JSON.stringify({
+						scale: $("#"+this.id+"input").val(),
+						text: $(this).html()
+					}));
+				}else if ((this.id == "healthcore")||(this.id == "healthbase")||(this.id == "healthbonus")||(this.id == "healthpoints")||(this.id == "healthset")||(this.id == "healthsetmax")){
+					$.post(('http://'+directoryPath+this.id), JSON.stringify({
+						health: $("#healthinput").val(),
+						text: $(this).html()
+					}));
+				}else if ((this.id == "entityhealth")||(this.id == "entityhealthset")||(this.id == "entityhealthsetmax")){
+					$.post(('http://'+directoryPath+this.id), JSON.stringify({
+						health: $("#entityhealthinput").val(),
+						text: $(this).html()
+					}));
+				}else if ((this.id == "stamina")||(this.id == "entitystamina")){
+					$.post(('http://'+directoryPath+this.id), JSON.stringify({
+						stamina: $("#"+this.id+"input").val(),
+						text: $(this).html()
+					}));
+				}else if ((this.id == "deadeye")||(this.id == "entitydeadeye")){
+					$.post(('http://'+directoryPath+this.id), JSON.stringify({
+						deadeye: $("#"+this.id+"input").val(),
+						text: $(this).html()
+					}));
+				}else if ((this.id == "alpha")||(this.id == "entityalpha")){
+					$.post(('http://'+directoryPath+this.id), JSON.stringify({
+						alpha: $("#"+this.id+"input").val(),
+						skin: $("#"+this.id+"skin :selected").val(),
+						text: $(this).html()
+					}));
+				}else if ((this.id == "velocity")||(this.id == "entityvelocity")){
+					$.post(('http://'+directoryPath+this.id), JSON.stringify({
+						x: $("#"+this.id+"xinput").val(),
+						y: $("#"+this.id+"yinput").val(),
+						z: $("#"+this.id+"zinput").val(),
+						text: $(this).html()
+					}));
+				}else{
+					$.post('http://'+directoryPath+this.id, JSON.stringify({
+						text: $(this).html()
+					}));
+				}
+			});
+		});
+	</script>
+	<style type="text/css">
+		select{
+			background: rgb(151,66,66);
+			color: white;
+			width: 3vw;
+			padding-right: 1%;
+			padding-left: 1%;
+			padding-top: 0.5%;
+			padding-bottom: 0.5%;
+			border-radius: 5px;
+			text-align: center;
+			text-decoration: none;
+			font-family: 'Kaushan Script', cursive;
+			text-shadow:
+			0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black,
+			0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black;
+			font-size: 0.8vw;
+			font-weight: 400;
+		}
+		select:hover{
+			text-shadow:
+			0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black,
+			0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black,
+			0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black,
+			0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black;
+			filter: contrast(150%);
+		}
+	</style>
+</head>
+<body>
+	<div id="menu">
+		<div id='titlebar'>
+			<div id="close">X</div>
+			<label class="switch">
+				<input id="switch" type="checkbox" checked>
+				<span class="slider"></span>
+			</label>
+			<div id="title"></div>
+		</div>
+		<div id="tabdefault" class="tabbutton">Player</div>
+		<div class="tabbutton">Entity</div>
+
+		<div class="tab" id="Player">
+			<div>
+				<button id="invincibleon">Invincibility On</button>
+				<button id="invincibleoff">Invincibility Off</button>
+			</div>
+			<div>
+				<button id="infinitestaminaon">Infinite Stamina On</button>
+				<button id="infinitestaminaoff">Infinite Stamina Off</button>
+			</div>
+			<div>
+				<button id="visibleon">Visibility On</button>
+				<button id="visibleoff">Visibility Off</button>
+			</div>
+			<div>
+				<button id="youcantbeshoton">You Can't Be Shot On</button>
+				<button id="youcantbeshotoff">You Can't Be Shot Off</button>
+			</div>
+			<div>
+				<button id="ragdollon">Ragdoll On</button>
+				<button id="ragdolloff">Ragdoll Off</button>
+			</div>
+			<div>
+				<button id="killself">Kill Yourself</button>
+				<button id="reviveself">Revive Yourself</button>
+			</div>
+			<div>
+				<button id="friendlyfireon">Turn Friendly Fire On</button>
+				<button id="friendlyfireoff">Turn Friendly Fire Off</button>
+			</div>
+			<div>
+				<button id="superjumpon">Super Jump On</button>
+				<button id="superjumpoff">Super Jump Off</button>
+			</div>
+			<div>
+				<button id="mapcloudon">Map Cloud On</button>
+				<button id="mapcloudoff">Map Cloud Off</button>
+			</div>
+			<div>
+				<button id="minimapon">Minimap On</button>
+				<button id="minimapoff">Minimap Off</button>
+			</div>
+			<div>
+				<button id="armour">Give Armour</button>
+			</div>
+			<div>
+				<button id="teleporttowaypoint">Teleport To Waypoint</button>
+			</div>
+			<div>
+				<button id="clothes">Randomise Clothes If Ped Has Them</button>
+			</div>
+			<div>
+				<input  id="scaleinput" type="number" min="0.0" value="1.0" step="0.01" placeholder="0.0">
+				<button id="scale">Set Your Peds Scale</button>
+				<button id="scalereset">Reset Your Peds Scale</button>
+			</div>
+			<div>
+				<input  id="healthinput" type="number" min="0" value="100" step="1" oninput="validity.valid||(value='');" placeholder="0">
+				<button id="healthcore">Set Your Health Core</button>
+				<button id="healthset">Set Your Health</button>
+				<button id="healthsetmax">Set Your Max Health</button>
+			<!-- <button id="healthbase">Set Your Health Base</button>
+			<button id="healthbonus">Set Your Health Bonus</button>
+			<button id="healthpoints">Set Your Health Points</button> -->
+		</div>
+		<div>
+			<input  id="staminainput" type="number" min="0" value="100" step="1" oninput="validity.valid||(value='');" placeholder="0">
+			<button id="stamina">Set Your Stamina</button>
+			<input  id="deadeyeinput" type="number" min="0" value="100" step="1" oninput="validity.valid||(value='');" placeholder="0">
+			<button id="deadeye">Set Your Deadeye</button>
+		</div>
+		<div>
+			<input  id="alphainput" type="number" min="0" max="255" value="255" step="1" oninput="validity.valid||(value='');" placeholder="0">
+			<p>Exclude Skin Of Model:</p>
+			<select id="alphaskin"><option selected="selected">0</option><option>1</option></select>
+			<button id="alpha">Set Your Alpha</button>
+			<button id="alphareset">Reset Your Alpha</button>
+		</div>
+		<div>
+			<input  id="velocityxinput" type="number" value="0.0" step="0.01" oninput="validity.valid||(value='');" placeholder="0.0">
+			<input  id="velocityyinput" type="number" value="0.0" step="0.01" oninput="validity.valid||(value='');" placeholder="0.0">
+			<input  id="velocityzinput" type="number" value="0.0" step="0.01" oninput="validity.valid||(value='');" placeholder="0.0">
+			<button id="velocity">Give A Velocity</button>
+		</div>
+		<div>
+			<button id="cleandirt">Clean Yourself</button>
+			<button id="cleanwetness">Dry Yourself</button>
+		</div>
+		<div>
+			<button id="clone">Clone Yourself</button>
+		</div>
+	</div>
+	<div class="tab" id="Entity">
+		<div>
+			<button id="entityignoreon">Set Entity to Ignore You On</button>
+			<button id="entityignoreoff">Set Entity to Ignore You Off</button>
+		</div>
+		<div>
+			<button id="entityinvincibleon">Entity Invincibility On</button>
+			<button id="entityinvincibleoff">Entity Invincibility Off</button>
+		</div>
+		<div>
+			<button id="entityinfinitestaminaon">Infinite Stamina On</button>
+			<button id="entityinfinitestaminaoff">Infinite Stamina Off</button>
+		</div>
+		<div>
+			<button id="entityvisibleon">Visibility On</button>
+			<button id="entityvisibleoff">Visibility Off</button>
+		</div>
+		<div>
+			<button id="entityragdollon">Entity Can Ragdoll On</button>
+			<button id="entityragdolloff">Entity Can Ragdoll Off</button>
+		</div>
+		<div>
+			<button id="entitykill">Kill Entity</button>
+			<button id="entityrevive">Revive Entity</button>
+		</div>
+		<div>
+			<button id="entitydespawnon">Entity Can Not Despawn On</button>
+			<button id="entitydespawnoff">Entity Can Not Despawn Off</button>
+		</div>
+		<div>
+			<button id="entityarmour">Entity Armour On</button>
+		</div>
+		<div>
+			<input  id="entityscaleinput" type="number" min="0.0" value="1.0" step="0.01" placeholder="0.0">
+			<button id="entityscale">Entity Scale</button>
+			<button id="entityscalereset">Reset Entity Scale</button>
+		</div>
+		<div>
+			<input  id="entityhealthinput" type="number" min="0" value="100" step="1" oninput="validity.valid||(value='');" placeholder="0">
+			<button id="entityhealth">Entity Health Core</button>
+			<button id="entityhealthset">Set Entity's Health</button>
+			<button id="entityhealthsetmax">Set Entity's Max Health</button>
+		</div>
+		<div>
+			<input  id="entitystaminainput" type="number" min="0" value="100" step="1" oninput="validity.valid||(value='');" placeholder="0">
+			<button id="entitystamina">Entity Stamina</button>
+			<input  id="entitydeadeyeinput" type="number" min="0" value="100" step="1" oninput="validity.valid||(value='');" placeholder="0">
+			<button id="entitydeadeye">Entity Deadeye</button>
+		</div>
+		<div>
+			<input  id="entityalphainput" type="number" min="0" max="255" value="255" step="1" oninput="validity.valid||(value='');" placeholder="0">
+			<p>Exclude Skin Of Model (Default:0):</p>
+			<select id="entityalphaskin"><option selected="selected">0</option><option>1</option></select>
+			<button id="entityalpha">Set Entity's Alpha</button>
+			<button id="entityalphareset">Reset Entity's Alpha</button>
+		</div>
+		<div>
+			<input  id="entityvelocityxinput" type="number" value="0.0" step="0.01" oninput="validity.valid||(value='');" placeholder="0.0">
+			<input  id="entityvelocityyinput" type="number" value="0.0" step="0.01" oninput="validity.valid||(value='');" placeholder="0.0">
+			<input  id="entityvelocityzinput" type="number" value="0.0" step="0.01" oninput="validity.valid||(value='');" placeholder="0.0">
+			<button id="entityvelocity">Give Entity A Velocity</button>
+		</div>
+		<div>
+			<button id="entitycleartask">Clear Entity's Tasks</button>
+			<button id="entitycleartask2">Clear Entity's Secondary Tasks</button>
+			<button id="entitycleartaskimmediately">Clear Entity's Tasks Immediately</button>
+		</div>
+		<div>
+			<button id="entityfreezeon">Freeze Entity's Position On</button>
+			<button id="entityfreezeoff">Freeze Entity's Position Off</button>
+		</div>
+		<div>
+			<button id="entitygravityon">Entity Has Gravity On</button>
+			<button id="entitygravityoff">Entity Has Gravity Off</button>
+		</div>
+		<div>
+			<button id="entitychangeintotarget">Change Model to Entity's</button>
+			<button id="entitychangetarget">Change Entity's Model to Current Model</button>
+		</div>
+		<div>
+			<button id="entitycleandirt">Clean Entity</button>
+			<button id="entitycleanwetness">Dry Entity</button>
+		</div>
+		<div>
+			<button id="entityclothes">Randomise The Entity's Clothes If They Have Them</button>
+		</div>
+		<div>
+			<button id="entitydelete">Deletes The Entity</button>
+		</div>
+		<div>
+			<button id="entityclone">Clone Entity</button>
+		</div>
+	</div>
+</div>
+</body>
+</html>
