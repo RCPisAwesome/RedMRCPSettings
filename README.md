@@ -9,7 +9,7 @@ If you're like me and you are sick of not being able to use your mouse in a trai
 :---:|:---:
 [![RCPSettings](https://www.rcpisawesome.co.uk/dev/RedmRCPsettings/1.png)](https://www.rcpisawesome.co.uk/dev/RedmRCPsettings/1.png)|[![RCPSettings](https://www.rcpisawesome.co.uk/dev/RedmRCPsettings/2.png)](https://www.rcpisawesome.co.uk/dev/RedmRCPsettings/2.png)
 # Video:
-[![RCPSettingsVideo](https://img.youtube.com/vi/qL3cxMUbaH4/maxresdefault.jpg)](https://www.youtube.com/watch?v=qL3cxMUbaH4)
+[![RCPSettingsVideo](https://www.youtube.com/watch?v=qL3cxMUbaH4)](https://img.youtube.com/vi/qL3cxMUbaH4/maxresdefault.jpg)
 # Features:
 - Do /rcpsettings in the RedM chat to open the menu
 - Do /rcpcrosshair in the RedM chat to toggle the crosshair
