@@ -11,8 +11,9 @@ If you're like me and you are sick of not being able to use your mouse in a trai
 # Video:
 [![RCPSettingsVideo](https://img.youtube.com/vi/qL3cxMUbaH4/maxresdefault.jpg)](https://www.youtube.com/watch?v=qL3cxMUbaH4)
 # Patreon:
-For early access to to scripts and videos as well as supporting me check out my Patreon page
 [![patreon](https://c5.patreon.com/external/favicon/apple-touch-icon.png)](https://www.patreon.com/RCPisAwesome)
+
+For early access to to scripts and videos as well as supporting me check out my Patreon page
 # Features:
 - Do /rcpsettings in the RedM chat to open the menu
 - Do /rcpcrosshair in the RedM chat to toggle the crosshair
