@@ -1,9 +1,7 @@
 # RedM RCP Settings Menu
-NUI trainer menu for RedM, the Red Dead Redemption 2 Multiplayer Mod, from the Creators of FiveM
+NUI trainer menu for RedM, the Red Dead Redemption 2 Multiplayer Mod, from the Creators of FiveM!
 
-Coded in LUA, HTML, CSS &amp; JavaScript
-
-If you're like me and you are sick of not being able to use your mouse in a trainer menu then look no further
+Tired of having to use your keyboard to navigate menus? Well look no further! This NUI based trainer makes it like you're using a website so no more awful arrow key mashing!
 # Screenshots:
 <a href="https://www.rcpisawesome.co.uk/dev/RedmRCPsettings/1.png" target="_blank">**Player**</a>|<a href="https://www.rcpisawesome.co.uk/dev/RedmRCPsettings/2.png" target="_blank">**Entity**</a>
 :---:|:---:
