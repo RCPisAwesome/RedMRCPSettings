@@ -1,4 +1,4 @@
-# RedM RCP Settings Menu
+# RedM RCP's Trainer Menu: Settings
 NUI trainer menu for RedM, the Red Dead Redemption 2 Multiplayer Mod, from the Creators of FiveM!
 
 Tired of having to use your keyboard to navigate menus? Well look no further! This NUI based trainer makes it like you're using a website so no more awful arrow key mashing!
@@ -9,7 +9,7 @@ Tired of having to use your keyboard to navigate menus? Well look no further! Th
 # Video:
 [![RCPSettingsVideo](https://img.youtube.com/vi/qL3cxMUbaH4/maxresdefault.jpg)](https://www.youtube.com/watch?v=qL3cxMUbaH4)
 # Patreon:
-[![patreon](https://c5.patreon.com/external/favicon/favicon.ico)](https://www.patreon.com/RCPisAwesome)     For early access to scripts and videos and other rewards, support me on Patreon page!
+[![patreon](https://c5.patreon.com/external/favicon/favicon.ico)](https://www.patreon.com/RCPisAwesome)     For early access to scripts and videos and other rewards, support me on my Patreon page!
 # Features:
 - Do /rcpsettings in the RedM chat to open the menu
 - Do /rcpcrosshair in the RedM chat to toggle the crosshair
