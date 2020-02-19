@@ -17,9 +17,9 @@ Tired of having to use your keyboard to navigate menus? Well look no further! Th
 - Toggling the Blue Switch in the top right changes whether only 1 button gets highlighted when clicked or any of them
 - Clicking the menu title resets the buttons back to their red colour
 # Installation:
-1. Make a folder called RCPSettings in your resources folder of your server
+1. Make a folder called rcpsettings in your resources folder of your server (it has to be lower case)
 2. Clone or download the files to that folder
-3. Put start RCPSettings in the server.cfg, it is case sensitive so make sure it's the exact same as the folder name
+3. Put start rcpsettings in the server.cfg, it is case sensitive so make sure it's the exact same as the folder name
 # Issues/Bugs &amp; New Features:
 If you find a bug, issue or error or if you want to request a new feature, [create an issue](https://github.com/RCPisAwesome/RedmRCPsettings/issues) with as much information as you can provide
 
