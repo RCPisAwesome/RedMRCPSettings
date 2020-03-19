@@ -115,6 +115,30 @@ CreateThread(function()
 	end
 end)
 
+RegisterNUICallback('cleartask', function(data)
+	CreateThread(function()
+		ClearPedTasks(PlayerPedId(),false,false)
+		datatext = data.text
+		DrawTextWait()
+	end)
+end)
+
+RegisterNUICallback('cleartask2', function(data)
+	CreateThread(function()
+		ClearPedSecondaryTask(PlayerPedId())
+		datatext = data.text
+		DrawTextWait()
+	end)
+end)
+
+RegisterNUICallback('cleartaskimmediately', function(data)
+	CreateThread(function()
+		ClearPedTasksImmediately(PlayerPedId(),false,false)
+		datatext = data.text
+		DrawTextWait()
+	end)
+end)
+
 RegisterNUICallback('superjumpon', function(data)
 	CreateThread(function()
 		superjump = true
