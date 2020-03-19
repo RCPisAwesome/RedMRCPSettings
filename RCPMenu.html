@@ -1,19 +1,15 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<title>Settings Menu By RCPisAwesome</title>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-	<script src="https://www.rcpisawesome.co.uk/dev/RCPMenu.js" type="text/javascript"></script>
+	<script src="https://www.rcpisawesome.co.uk/dev/RCPMenu.js"></script>
 	<link href="https://www.rcpisawesome.co.uk/dev/RCPMenu.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
-	<script type="text/javascript">
+	<script>
 		$(function(){
 			$("button").click(function(){
-				if (document.getElementById("switch").checked == true) {
-					colourselectedbutton(this);
-				}else{
-					colouronlyselectedbutton(this);
-				}
 				var location = window.location.href;
 				var directoryPath = location.substring(6, location.lastIndexOf("/")+1);
 				if ((this.id == "scale")||(this.id == "entityscale")){
@@ -62,33 +58,16 @@
 			});
 		});
 	</script>
-	<style type="text/css">
-		select{
-			background: rgb(151,66,66);
-			color: white;
-			width: 3vw;
-			padding-right: 1%;
-			padding-left: 1%;
-			padding-top: 0.5%;
-			padding-bottom: 0.5%;
-			border-radius: 5px;
-			text-align: center;
-			text-decoration: none;
-			font-family: 'Kaushan Script', cursive;
-			text-shadow:
-			0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black,
-			0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black;
-			font-size: 0.8vw;
-			font-weight: 400;
+	<style>
+		#menu{
+			height: auto;
 		}
-		select:hover{
-			text-shadow:
-			0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black,
-			0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black,
-			0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black,
-			0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black;
-			filter: contrast(150%);
+		.tab{
+			height: auto;
 		}
+		.tabbutton{
+			width: 50%;
+		}		
 	</style>
 </head>
 <body>
