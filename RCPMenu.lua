@@ -932,9 +932,11 @@ RegisterNUICallback('entityclone', function(data)
 			datatext = "You Need To Point At An Entity"
 		else
 			local ped = ClonePed(entityhit,0.0,true,true)
+			SetEntityAsMissionEntity(ped, true, false)
+			NetworkRegisterEntityAsNetworked(ped)
 			local pedid = NetworkGetNetworkIdFromEntity(ped)
 			SetNetworkIdExistsOnAllMachines(pedid, true)
-			NetworkRegisterEntityAsNetworked(pedid)
+			
 			datatext = data.text
 		end
 		DrawTextWait()
@@ -944,9 +946,11 @@ end)
 RegisterNUICallback('clone', function(data)
 	CreateThread(function()
 		local ped = ClonePed(PlayerPedId(),0.0,true,true)
+		SetEntityAsMissionEntity(ped, true, false)
+		NetworkRegisterEntityAsNetworked(ped)
 		local pedid = NetworkGetNetworkIdFromEntity(ped)
 		SetNetworkIdExistsOnAllMachines(pedid, true)
-		NetworkRegisterEntityAsNetworked(pedid)
+		
 		datatext = data.text
 		DrawTextWait()
 	end)
