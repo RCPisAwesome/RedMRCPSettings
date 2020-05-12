@@ -931,10 +931,7 @@ RegisterNUICallback('entityclone', function(data)
 		if (entityhit == nil) then
 			datatext = "You Need To Point At An Entity"
 		else
-			local ped = ClonePed(entityhit,0.0,true,true)
-			SetNetworkIdExistsOnAllMachines(NetworkGetNetworkIdFromEntity(ped), true)
-			NetworkRegisterEntityAsNetworked(PedToNet(ped))
-			
+			ClonePed(entityhit,0.0,true,true)
 			datatext = data.text
 		end
 		DrawTextWait()
@@ -943,11 +940,44 @@ end)
 
 RegisterNUICallback('clone', function(data)
 	CreateThread(function()
-		local ped = ClonePed(PlayerPedId(),0.0,true,true)
-		SetNetworkIdExistsOnAllMachines(NetworkGetNetworkIdFromEntity(ped), true)
-		NetworkRegisterEntityAsNetworked(PedToNet(ped))
-
+		ClonePed(PlayerPedId(),0.0,true,true)
 		datatext = data.text
+		DrawTextWait()
+	end)
+end)
+
+RegisterNUICallback('entitynetwork', function(data)
+	CreateThread(function()
+		local entityhit = GetEntityInView()
+		if (entityhit == nil) then
+			datatext = "You Need To Point At An Entity"
+		else
+			if IsEntityAVehicle(entityhit) then
+				networkid = VehToNet(entityhit)
+			elseif IsEntityAPed(entityhit) then
+				networkid = PedToNet(entityhit)
+			else
+				networkid = ObjToNet(entityhit)
+			end
+			SetNetworkIdExistsOnAllMachines(networkid, true)
+			NetworkRegisterEntityAsNetworked(entityhit)
+			NetworkSetEntityInvisibleToNetwork(entityhit,false)
+			datatext = data.text
+		end
+		DrawTextWait()
+	end)
+end)
+
+RegisterNUICallback('entitygun', function(data)
+	CreateThread(function()
+		local entityhit = GetEntityInView()
+		if (entityhit == nil) then
+			datatext = "You Need To Point At An Entity"
+		else
+			local retval, hash = GetCurrentPedWeapon(PlayerPedId(),true--[[bool--]],0--[[int--]],true--[[bool--]])
+			GiveWeaponToPed_2(entityhit,hash,100,true,true,1,false,0.5,1.0,false,0)
+			datatext = data.text
+		end
 		DrawTextWait()
 	end)
 end)
