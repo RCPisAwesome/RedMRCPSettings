@@ -25,4 +25,4 @@ If you find a bug, issue or error or if you want to request a new feature, [crea
 
 If you ever get stuck in the menu from an issue you can do rcpuifix in the F8 console to close it
 
-If your menu doesn't look like the screenshots (click on them to make sure its the latest image), delete your RedM cache except the game folder and your server cache too
+If you're having issues with selecting an entity, try getting very close and/or use firstperson. There are weird invisible entities or hitboxes that get hit instead sometimes, nothing I can do about it.
